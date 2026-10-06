@@ -1,0 +1,56 @@
+@import "tailwindcss";
+
+@layer base {
+  body {
+    font-family: 'Plus Jakarta Sans', system-ui, -apple-system, sans-serif;
+  }
+  
+  h1, h2, .font-display {
+    font-family: 'DM Serif Display', Georgia, serif;
+  }
+}
+
+@media screen {
+  .print-only {
+    display: none !important;
+  }
+}
+
+@media print {
+  @page {
+    margin: 12mm;
+    size: A4 portrait;
+  }
+
+  body {
+    background: white !important;
+    color: #1c1917 !important;
+    font-size: 11pt !important;
+  }
+
+  .no-print {
+    display: none !important;
+  }
+
+  .print-only {
+    display: block !important;
+  }
+
+  .print-card {
+    border: 1px solid #d6d3d1 !important;
+    padding: 10px !important;
+    margin-bottom: 12px !important;
+    break-inside: avoid !important;
+    page-break-inside: avoid !important;
+  }
+
+  .print-day-break {
+    break-inside: avoid !important;
+    page-break-inside: avoid !important;
+    margin-bottom: 18px !important;
+  }
+
+  a, button {
+    text-decoration: none !important;
+  }
+}

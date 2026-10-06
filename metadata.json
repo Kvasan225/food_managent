@@ -1,0 +1,6 @@
+{
+  "name": "PantryBridge - End-of-Month Kitchen Ration & Meal Planner",
+  "description": "Smart pantry ration manager and meal planner that stretches your remaining kitchen ingredients to comfortably reach next month's grocery budget.",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}
